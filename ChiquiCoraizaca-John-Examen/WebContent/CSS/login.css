@@ -1,0 +1,32 @@
+
+
+
+
+#titulo {
+	text-align: center;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255, 0.9);
+    /*border: black thick solid;*/
+    clear: both;
+    
+}
+
+
+
+.empresas  {
+    float: left;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.9);
+    border: black thick solid;
+    
+    border-radius: 25px;
+    margin-top: 3%;
+    margin-left: 24%;
+    width: 50%;
+}
+
+.empresas img{
+	width: 20%;
+    height: 20%;
+	
+}
