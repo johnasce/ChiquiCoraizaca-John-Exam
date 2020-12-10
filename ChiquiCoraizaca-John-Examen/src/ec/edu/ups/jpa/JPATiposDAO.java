@@ -7,7 +7,7 @@ public class JPATiposDAO extends JPAGenericDAO<Tipo, Integer> implements TiposDA
 
 	public JPATiposDAO() {
 		super(Tipo.class);
-		// TODO Auto-generated constructor stub
+	
 	}
 	
 

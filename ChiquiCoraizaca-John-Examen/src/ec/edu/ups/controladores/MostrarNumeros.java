@@ -13,17 +13,17 @@ import ec.edu.ups.dao.DAOFactory;
 import ec.edu.ups.dao.TelefonosDAO;
 import ec.edu.ups.entities.Telefono;
 
-@WebServlet("/listarNumeros")
-public class listarNumeros extends HttpServlet {
+@WebServlet("/mostrarNumeros")
+public class MostrarNumeros extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private TelefonosDAO telDAO;
+	private TelefonosDAO telefDAO;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public listarNumeros() {
+    public MostrarNumeros() {
         super();
-        telDAO = DAOFactory.getFactory().getTelefonosDAO();
+        telefDAO = DAOFactory.getFactory().getTelefonosDAO();
     }
 
 	/**
@@ -42,13 +42,13 @@ public class listarNumeros extends HttpServlet {
 		String url=null;
 		try {
 			
-			List<Telefono> listTel= telDAO.findAll();
+			List<Telefono> listTel= telefDAO.findAll();
 
 			request.setAttribute("listaTel", listTel);
 			
-			url = "/Invitados/lista.jsp";
+			url = "/jspinterac/mostrar.jsp";
 		}catch(Exception e) {
-			url = "/Invitados/error.jsp";
+			url = "/jspinterac/error.jsp";
 		}
 		getServletContext().getRequestDispatcher(url).forward(request, response);
 	

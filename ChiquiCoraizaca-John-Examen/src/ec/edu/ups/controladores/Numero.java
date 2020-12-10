@@ -16,7 +16,7 @@ import ec.edu.ups.entities.Telefono;
 /**
  * Servlet implementation class bucarPorNumero
  */
-@WebServlet("/bucarPorNumero")
+@WebServlet("/findNumero")
 public class Numero extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     private TelefonosDAO telDAO;
@@ -50,9 +50,9 @@ public class Numero extends HttpServlet {
 
 			request.setAttribute("listaTel", listTel);
 			
-			url = "/Invitados/lista.jsp";
+			url = "/jspinterac/mostrar.jsp";
 		}catch(Exception e) {
-			url = "/Invitados/error.jsp";
+			url = "/jspinterac/error.jsp";
 		}
 		getServletContext().getRequestDispatcher(url).forward(request, response);
 	}

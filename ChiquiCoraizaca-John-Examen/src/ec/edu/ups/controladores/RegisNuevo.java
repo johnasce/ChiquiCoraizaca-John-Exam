@@ -19,7 +19,7 @@ import ec.edu.ups.entities.Usuario;
 
 
 
-@WebServlet("/registrarNuevo")
+@WebServlet("/nuevoReg")
 public class RegisNuevo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -50,9 +50,9 @@ public class RegisNuevo extends HttpServlet {
 		String url=null;
 		try {
 
-			url = "/Invitados/registro.jsp";
+			url = "/jspinterac/nuevo_registro.jsp";
 		}catch(Exception e) {
-			url = "/Invitados/error.jsp";
+			url = "/jspinterac/error.jsp";
 		}
 		getServletContext().getRequestDispatcher(url).forward(request, response);
 	}

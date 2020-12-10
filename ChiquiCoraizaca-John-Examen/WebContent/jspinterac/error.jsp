@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>OH NOO</title>
+<title>Error</title>
 </head>
 <body>
-<h1>ERROR</h1>
+<h1>Se ha producido un Error Inesperado</h1>
 </body>
 </html>

@@ -24,7 +24,6 @@ public class JPAUsuariosDAO extends JPAGenericDAO<Usuario, Integer> implements U
 
 	@Override
 	public void loquesea(String correo) {
-		// TODO Auto-generated method stub
 		
 	}
 

@@ -31,7 +31,9 @@ public class Telefono implements Serializable{
 	@ManyToOne
 	@JoinColumn
 	private Usuario usuario;
-
+	
+	/*
+	 * Constructor para pasarle parametros desde otras clases*/
 	public Telefono (int id, String numero, Operadora operador, Tipo tipo, Usuario usuario) {
 		this.setId(id);
 		this.setNumero(numero);
@@ -40,12 +42,14 @@ public class Telefono implements Serializable{
 		this.setUsuario(usuario);
 	}
 	
-	
+	/*
+	 Constructor vacion Requerido*/
 	public Telefono() {
 		super();
 	}
 
-
+	/*
+	 Setters and Getters para modificar los atributos del objeto*/
 	public int getId() {
 		return id;
 	}
@@ -92,7 +96,6 @@ public class Telefono implements Serializable{
 
 	
 	
-
 	public Usuario getUsuario() {
 		return usuario;
 	}
@@ -105,7 +108,7 @@ public class Telefono implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Telefono [id=" + id + ", numero=" + numero + ", operador=" + operador + ", tipo=" + tipo + "]";
+		return "Telefono {id=" + id + ", numero=" + numero + ", operador=" + operador + ", tipo=" + tipo + "}";
 	}
 	
 	

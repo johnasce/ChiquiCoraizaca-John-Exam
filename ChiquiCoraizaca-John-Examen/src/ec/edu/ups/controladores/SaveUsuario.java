@@ -20,7 +20,7 @@ import ec.edu.ups.entities.Usuario;
 /**
  * Servlet implementation class guardarUsuario
  */
-@WebServlet("/guardarUsuario")
+@WebServlet("/saveUsuario")
 public class SaveUsuario extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private TiposDAO tipDAO;
@@ -93,9 +93,9 @@ public class SaveUsuario extends HttpServlet {
 			}
 			
 			
-			url = "/Invitados/exitoCrear.jsp";
+			url = "/jspinterac/Creado.jsp";
 		}catch(Exception e) {
-			url = "/Invitados/error.jsp";
+			url = "/jspinterac/error.jsp";
 		}
 		getServletContext().getRequestDispatcher(url).forward(request, response);
 	}

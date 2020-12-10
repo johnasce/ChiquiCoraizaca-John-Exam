@@ -12,7 +12,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Listar Telefonos</title>
+<title>Mostrar Telefonos</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 </head>
@@ -23,7 +23,7 @@
 	<% List<Telefono> list = (List<Telefono>) request.getAttribute("listaTel"); %>
 
 <div class="container-sm"" height="200px">
-		<form action="bucarPorCedula" method="post">
+		<form action="findCedula" method="post">
 		
 			<label for="cedula" class="badge badge-light">Buscar por Cedula </label> 
 			<input name='cedula' type='text'  > <BR />
@@ -32,7 +32,7 @@
 	   	</form> 
 </div>
 <div class="container-sm"" height="200px">
-		<form action="bucarPorNumero" method="post">
+		<form action="findNumero" method="post">
 		
 			<label for="numero" class="badge badge-light">Buscar por Numero Telefono </label> 
 			<input name='numero' type='text'> <BR />

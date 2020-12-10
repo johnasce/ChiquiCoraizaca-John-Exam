@@ -16,7 +16,7 @@ import ec.edu.ups.entities.Telefono;
 /**
  * Servlet implementation class bucarPorCedula
  */
-@WebServlet("/bucarPorCedula")
+@WebServlet("/findCedula")
 public class Cedula extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private TelefonosDAO telDAO;
@@ -45,15 +45,12 @@ public class Cedula extends HttpServlet {
 		try {
 			
 			String cedula = request.getParameter("cedula");
-			
-			
-			
+	
 			List<Telefono> listTel= telDAO.findCed(cedula);
 			request.setAttribute("listaTel", listTel);
-			
-			url = "/Invitados/lista.jsp";
+			url = "/jspinterac/mostrar.jsp";
 		}catch(Exception e) {
-			url = "/Invitados/error.jsp";
+			url = "/jspinterac/error.jsp";
 		}
 		getServletContext().getRequestDispatcher(url).forward(request, response);
 	}

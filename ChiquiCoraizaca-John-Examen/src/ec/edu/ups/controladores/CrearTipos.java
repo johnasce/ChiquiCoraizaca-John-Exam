@@ -9,9 +9,9 @@ public class CrearTipos {
 		TiposDAO tipDAO=DAOFactory.getFactory().getTiposDAO();
 		
 		// Instanciar una clase para crear un objeto tipo en la base de datos
-		Tipo tipoOperadora1 = new Tipo(0, "Celular");
+		Tipo tipoOperadora1 = new Tipo(0, "MOVIL");
 		// Instanciar una clase para crear un objeto tipo en la base de datos
-		Tipo tipoOperadora2 = new Tipo(0, "Convencional");
+		Tipo tipoOperadora2 = new Tipo(0, "FIJO");
 		
 		// mandar como parametro al metodo de crear para que se cree un tipo de operadora
 		tipDAO.create(tipoOperadora1);

@@ -123,8 +123,8 @@ public class Usuario implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Usuario [id=" + id + ", cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido
-				+ ", correo=" + correo + ", password=" + password + ", telefonos=" + telefonos + "]";
+		return "User: {id=" + id + ", cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido
+				+ ", correo=" + correo + ", password=" + password + ", telefonos=" + telefonos + "}";
 	}
 	
 	

@@ -13,7 +13,7 @@ function createOperadora() {
 
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("pantalla").innerHTML = this.responseText;
+                document.getElementById("new_ven").innerHTML = this.responseText;
             }
         };
 

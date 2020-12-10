@@ -12,7 +12,9 @@ public class JPATelefonosDAO extends JPAGenericDAO<Telefono, Integer> implements
 		super(Telefono.class);
 		// TODO Auto-generated constructor stub
 	}
-
+	
+	/*
+	 * Metodo que sirve para buscar por la Cedula del Usuario*/
 	@Override
 	public List<Telefono> findCed(String cedula) {
 		List<Telefono> tel=null;
@@ -25,7 +27,9 @@ public class JPATelefonosDAO extends JPAGenericDAO<Telefono, Integer> implements
         }
         return tel;
 	}
-
+	/*
+	 * Metodo para buscar por el Telefono del Usuario
+	 * Return list Telfonos de Usuario*/
 	@Override
 	public List<Telefono> findNumero(String numero) {
 		List<Telefono> tel=null;

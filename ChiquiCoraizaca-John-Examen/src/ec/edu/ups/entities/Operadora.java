@@ -63,7 +63,7 @@ public class Operadora implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Operador [id=" + id + ", nombre=" + nombre + ", telefono=" + telefonos + "]";
+		return "Operadora : {id=" + id + ", nombre=" + nombre + ", telefono=" + telefonos + "}";
 	}
 	
 	

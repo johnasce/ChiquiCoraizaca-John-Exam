@@ -53,9 +53,9 @@ public class telefons extends HttpServlet {
 			
 			
 			
-			url = "/Invitados/numeros.jsp";
+			url = "/jspinterac/numeros.jsp";
 		}catch(Exception e) {
-			url = "/Invitados/error.jsp";
+			url = "/jspinterac/error.jsp";
 		}
 		getServletContext().getRequestDispatcher(url).forward(request, response);
 	}

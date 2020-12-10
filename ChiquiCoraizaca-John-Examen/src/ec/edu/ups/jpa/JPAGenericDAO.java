@@ -23,7 +23,7 @@ public class JPAGenericDAO<T, ID> implements GenericcDAO<T, ID> {
 	    em.persist(entity);
 	    em.getTransaction().commit();
 	} catch (Exception e) {
-	    System.out.println(">>>> ERROR:JPAGenericDAO:create " + e);
+	    System.out.println(">>>> ERROR:JPAGenericDAO:Method create " + e);
 	    if (em.getTransaction().isActive())
 		em.getTransaction().rollback();
 	}
@@ -44,13 +44,12 @@ public class JPAGenericDAO<T, ID> implements GenericcDAO<T, ID> {
 	    em.getTransaction().commit();
 	    
 	} catch (Exception e) {
-	    System.out.println(">>>> ERROR:JPAGenericDAO:update " + e);
+	    System.out.println(">>>> ERROR:JPAGenericDAO:Method update " + e);
 	    if (em.getTransaction().isActive())
 		em.getTransaction().rollback();
 	}
     }
 
-    // entity debe estar en estado de "Managed"
     @Override
     public void delete(T entity) {
 	em.getTransaction().begin();
@@ -58,7 +57,7 @@ public class JPAGenericDAO<T, ID> implements GenericcDAO<T, ID> {
 	    em.remove(entity);
 	    em.getTransaction().commit();
 	} catch (Exception e) {
-	    System.out.println(">>>> ERROR:JPAGenericDAO:delete " + e);
+	    System.out.println(">>>> ERROR:JPAGenericDAO:Method delete " + e);
 	    if (em.getTransaction().isActive())
 		em.getTransaction().rollback();
 	}
