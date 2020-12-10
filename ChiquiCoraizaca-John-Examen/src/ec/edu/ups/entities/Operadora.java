@@ -23,11 +23,13 @@ public class Operadora implements Serializable{
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "operador")
 	private List<Telefono> telefonos = new ArrayList<Telefono>();
 	
-	
+	/*
+	 * Constructor vacio requerido */
 	public Operadora() {
 		super();
 	}
-
+	/*
+	 * Sobre carga del constructo para que pueda pasar parametros a la Clase Operadora*/
 	public Operadora (int id, String nombre) {
 		this.setId(id);
 		this.setNombre(nombre);

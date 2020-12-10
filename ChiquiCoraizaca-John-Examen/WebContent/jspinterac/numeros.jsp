@@ -48,5 +48,5 @@ for (int i=0; i< iter ;i++){
 			out.println("<br>");
 }
 
-out.println("<INPUT type='submit' class='btn btn-outline-primary center-block' value='Guardar Telefonos'/>");
+out.println("<INPUT type='submit' class='btn btn-outline-primary center-inline' value='Guardar Contacto'/>");
 %>

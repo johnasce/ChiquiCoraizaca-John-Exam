@@ -1,4 +1,4 @@
-package ec.edu.ups.controladores;
+package ec.edu.ups.controler;
 
 import java.io.IOException;
 import java.util.List;

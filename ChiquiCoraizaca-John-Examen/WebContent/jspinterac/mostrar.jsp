@@ -72,8 +72,13 @@
 		    		out.println("</tr>");
 		       	}
 	    }
+	    
+	    
 	   
 	    %>
+	    <a href="/ChiquiCoraizaca-John-Examen/index.html">    
+	    
+		<h2 class="text-center text-primary" >Pagina Principal</h2>
 	
 	</table>
 

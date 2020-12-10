@@ -32,7 +32,8 @@ public class Usuario implements Serializable{
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "usuario")
 	private List<Telefono> telefonos = new ArrayList<Telefono>();
 	
-	
+	/*
+	 * Constructor Para pasarle los parametros desde Otras clases*/
 	public Usuario (int id, String cedula, String nombre, String apellido, String correo, String password) {
 		this.setId(id);
 		this.setCedula(cedula);
@@ -41,7 +42,9 @@ public class Usuario implements Serializable{
 		this.setCorreo(correo);
 		this.setPassword(password);
 	}
-
+	
+	/*
+	 Constructor vacio Requerido*/
 	public Usuario() {
 		super();
 	}

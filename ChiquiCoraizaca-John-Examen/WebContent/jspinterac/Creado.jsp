@@ -10,9 +10,10 @@
 </head>
 <body>
 	
-	<a href="/ChiquiCoraizaca-John-Examen/index.html">     
-	
-	<button class="btn btn-outline-primary center-block">Se A Creado Correctamente</button>
+	<a href="/ChiquiCoraizaca-John-Examen/index.html">    
+ 
+	<h1 class="text-center text-primary" >EL Usuario con El telefono ha sido Creado correctamente</h1>
+	<!-- <button class="btn btn-outline-primary center-block">Se A Creado Correctamente</button>  -->
 
 	</a>
 	

@@ -1,4 +1,4 @@
-package ec.edu.ups.controladores;
+package ec.edu.ups.controler;
 
 import java.io.IOException;
 import java.util.List;
@@ -10,20 +10,28 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import ec.edu.ups.dao.DAOFactory;
-import ec.edu.ups.dao.TelefonosDAO;
+import ec.edu.ups.dao.OperadoresDAO;
+import ec.edu.ups.dao.TiposDAO;
+import ec.edu.ups.entities.Operadora;
 import ec.edu.ups.entities.Telefono;
+import ec.edu.ups.entities.Tipo;
+import ec.edu.ups.entities.Usuario;
 
-@WebServlet("/mostrarNumeros")
-public class MostrarNumeros extends HttpServlet {
+
+
+@WebServlet("/nuevoReg")
+public class RegisNuevo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private TelefonosDAO telefDAO;
        
+	private TiposDAO tipDAO;
+	private OperadoresDAO opeDAO;
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public MostrarNumeros() {
+    public RegisNuevo() {
         super();
-        telefDAO = DAOFactory.getFactory().getTelefonosDAO();
+        tipDAO = DAOFactory.getFactory().getTiposDAO();
+        opeDAO = DAOFactory.getFactory().getOperadoresDao();
     }
 
 	/**
@@ -38,21 +46,15 @@ public class MostrarNumeros extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+
 		String url=null;
 		try {
-			
-			List<Telefono> listTel= telefDAO.findAll();
 
-			request.setAttribute("listaTel", listTel);
-			
-			url = "/jspinterac/mostrar.jsp";
+			url = "/jspinterac/nuevo_registro.jsp";
 		}catch(Exception e) {
 			url = "/jspinterac/error.jsp";
 		}
 		getServletContext().getRequestDispatcher(url).forward(request, response);
-	
-	
 	}
 
 }

@@ -20,7 +20,7 @@
 </head>
 <body>
 
-<h1 class="text-center text-primary" id="titulo">Nuevo Usuario</h1>
+<h1 class="text-center text-primary" >Nuevo Usuario</h1>
 <div class="container-sm"" height="200px">
 <FORM id="formularioT" action="saveUsuario" method="post">
 

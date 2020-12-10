@@ -12,10 +12,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
-/**
- * Entity implementation class for Entity: Tipo
- *
- */
+/*
+ * Clase o Entidad del Tipo de TElefono que se utilizara*/
 @Entity
 public class Tipo implements Serializable {
 
@@ -30,13 +28,15 @@ public class Tipo implements Serializable {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "tipo")
 	private List<Telefono> telefonos = new ArrayList<Telefono>();
 	
-
+	/*
+	 Constructor para Pasar parametros a la entitdad Tipo*/
 	public Tipo (int id, String nombre) {
 		this.setId(id);
 		this.setNombre(nombre);
 	}
 	
-	
+	/*
+	 Constructor vacio requerido*/
 	public Tipo() {
 		super();
 	}

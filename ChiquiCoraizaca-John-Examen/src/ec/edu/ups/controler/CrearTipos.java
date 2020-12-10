@@ -1,4 +1,4 @@
-package ec.edu.ups.controladores;
+package ec.edu.ups.controler;
 
 import ec.edu.ups.dao.TiposDAO;
 import ec.edu.ups.dao.DAOFactory;

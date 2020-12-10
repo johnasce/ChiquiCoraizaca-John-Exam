@@ -1,4 +1,4 @@
-package ec.edu.ups.controladores;
+package ec.edu.ups.controler;
 
 import ec.edu.ups.dao.DAOFactory;
 import ec.edu.ups.dao.OperadoresDAO;
@@ -13,7 +13,7 @@ public class CrearOperadores {
     	Operadora operadora1 = new Operadora(0, "Tuenti");
     	Operadora operadora2 = new Operadora(0, "Claro");
     	Operadora operadora3 = new Operadora(0, "Movistar");
-    	Operadora operadora4 = new Operadora(0, "Alegro");
+    	Operadora operadora4 = new Operadora(0, "BellSouth");
     	
     	
     	operadoraDAO.create(operadora1);
